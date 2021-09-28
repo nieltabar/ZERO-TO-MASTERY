@@ -1,0 +1,23 @@
+#item1 { grid-area: header; background-color: 	#ff0000;}
+#item2 { grid-area: menu; 	background-color: #00ff00 }
+#item3 { grid-area: main; background-color: #8F00FF;}
+#item4 { grid-area: right; background-color: #0000FF}
+#item5 { grid-area: main2; background-color: #FFA500}
+#item6 { grid-area: main3; background-color: #FFC0CB}
+#item7 { grid-area: footer; background-color: #FFFF00; }
+
+.container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'menu main2 main2 main3 main3 right'
+    'footer footer footer footer footer right';
+  padding: 1px;
+}
+
+.container > div {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 30px;
+}
